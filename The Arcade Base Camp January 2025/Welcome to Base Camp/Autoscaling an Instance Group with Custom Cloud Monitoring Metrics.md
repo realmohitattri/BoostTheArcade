@@ -1,10 +1,10 @@
-## Press Task 4 for Region (e.g., us-east4-a) 
-# Copy that region from your lab and paste it after `export Zone=` in the shell.
+## Press Task 4 for Region (e.g., us-east4-a) Copy that region from your lab and paste it after `export Zone=` in the shell.
 
    
       export ZONE=
 
-
+#Then paste the rest code and hit Enter
+      
       gsutil mb gs://$DEVSHELL_PROJECT_ID
       gsutil cp -r gs://spls/gsp087/* gs://$DEVSHELL_PROJECT_ID
       gcloud compute instance-templates create autoscaling-instance01 --metadata=startup-script-url=gs://$DEVSHELL_PROJECT_ID/startup.sh,gcs-bucket=gs://$DEVSHELL_PROJECT_ID
