@@ -38,9 +38,13 @@
     
 
 ※ Go to `Create group` from here: [Group](https://console.cloud.google.com/monitoring/groups?pli=1)
+
 ※ Name your group `DemoGroup`
+
 ※ In the third field (Value), type in `instance`
+
 ※ For Uptime check Title: enter `DemoGroup uptime check`
+
 
      #!/bin/bash
      # Define color variables
@@ -96,4 +100,5 @@
     gcloud alpha monitoring policies create --policy-from-file="awesome.json"
     echo "${BG_RED}${BOLD}Congratulations For Completing The Lab !!! Subscribe Boost The Arcade${RESET}"
 
+Subscribe to our Channel
 [Boost The Arcade](https://www.youtube.com/@BoostTheArcade)
