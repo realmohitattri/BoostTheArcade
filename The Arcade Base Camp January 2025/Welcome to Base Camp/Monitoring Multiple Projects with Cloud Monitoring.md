@@ -1,10 +1,11 @@
-### Monitoring Multiple Projects with Cloud Monitoring | GSP090
+## Monitoring Multiple Projects with Cloud Monitoring | GSP090
 
-## Run the following Commands in CloudShell
+# Run the following Commands in CloudShell
     export PROJECT_2=
     export ZONE=
 
 
+# Then Paste below code    
 
     #!/bin/bash
     # Define color variables
