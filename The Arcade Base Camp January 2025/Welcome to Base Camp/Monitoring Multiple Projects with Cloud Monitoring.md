@@ -34,7 +34,6 @@
     --machine-type=e2-medium
     echo "${YELLOW}${BOLD}NOW${RESET}" "${WHITE}${BOLD}FOLLOW${RESET}" "${GREEN}${BOLD}VIDEO'S INSTRUCTIONS${RESET}"
 
-#-----------------------------------------------------end----------------------------------------------------------#
     
 
 ※ Go to `Create group` from here: [Group](https://console.cloud.google.com/monitoring/groups?pli=1)
