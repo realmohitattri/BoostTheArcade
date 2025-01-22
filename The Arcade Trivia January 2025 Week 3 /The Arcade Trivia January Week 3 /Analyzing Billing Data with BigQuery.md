@@ -55,4 +55,4 @@
     
     SELECT CONCAT(service.description, ' : ',sku.description) as Line_Item, Count(*) as NUM FROM `billing_dataset.enterprise_billing` GROUP BY CONCAT(service.description, ' : ',sku.description)
 
-\e[31mSubscribe\e[0m [Boost The Arcade](www.youtube.com/@BoostTheArcade)
+Subscribe [Boost The Arcade](www.youtube.com/@BoostTheArcade)
