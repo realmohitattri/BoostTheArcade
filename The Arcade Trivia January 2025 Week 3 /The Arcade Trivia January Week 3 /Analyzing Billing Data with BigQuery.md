@@ -51,5 +51,8 @@
 
     SELECT CONCAT(service.description, ' : ',sku.description) as Line_Item FROM `billing_dataset.enterprise_billing` GROUP BY 1
 
-
+▶ Then Run this
+    
     SELECT CONCAT(service.description, ' : ',sku.description) as Line_Item, Count(*) as NUM FROM `billing_dataset.enterprise_billing` GROUP BY CONCAT(service.description, ' : ',sku.description)
+
+"\e[31mSubscribe\e[0m" [Boost The Arcade](www.youtube.com/@BoostTheArcade)
