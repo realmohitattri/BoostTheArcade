@@ -91,11 +91,11 @@ running_success=false
 # Retry loop
 while [ "$running_success" = false ]; do
   if running_function; then
-    echo "Function start running successfully [https://www.youtube.com/@techcps]"
+    echo "Function start running successfully [https://www.youtube.com/@boostthearcade]"
     running_success=true
   else
     echo "running failed. Retrying in 10 seconds..."
-    echo "Please subscribe to techcps [https://www.youtube.com/@techcps]."
+    echo "Please subscribe to Boost The Arcade  [https://www.youtube.com/@boostthearcade]."
     sleep 10
   fi
 done
