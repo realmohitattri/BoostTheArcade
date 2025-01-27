@@ -322,6 +322,6 @@ SELECT DISTINCT
   LIMIT 10
 "
 
-echo "${RED}${BOLD}Congratulations${RESET}" "${WHITE}${BOLD}for${RESET}" "${GREEN}${BOLD}Completing the Lab !!!${RESET}"
+echo "${RED}${BOLD}Congratulations${RESET}" "${WHITE}${BOLD}for${RESET}" "${GREEN}${BOLD}Completing the Lab !!!${RESET}" "${YELLOW}${BOLD}Subscribe to Boost The Arcade${RESET}"
 
 #-----------------------------------------------------end----------------------------------------------------------#
