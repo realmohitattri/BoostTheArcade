@@ -136,7 +136,7 @@ echo "${CYAN}${BOLD}Click here: "${RESET}""${BLUE}${BOLD}""https://console.cloud
 echo "${YELLOW}${BOLD}Copy this: "${RESET}""${GREEN}${BOLD}""http://$VM_EXT_IP:8080"""${RESET}"
 
 echo "${YELLOW}${BOLD}NOW${RESET}" "${WHITE}${BOLD}FOLLOW${RESET}" "${GREEN}${BOLD}VIDEO'S INSTRUCTIONS${RESET}"
-
+echo "${RED}${BOLD}Subscribe to Boost The Arcade${RESET}"
 #-----------------------------------------------------end----------------------------------------------------------#
 ```
 
