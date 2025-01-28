@@ -41,11 +41,4 @@ gcloud projects get-iam-policy $PROJECT_ID \
   --filter="bindings.members:serviceAccount:$SERVICE_ACCOUNT_NAME"
 ```
 
-## 🌐 Join our Community
-icon Join our Telegram Channel for the latest updates & Discussion Group for the lab enquiry
-icon Join our WhatsApp Community for the latest updates
-icon Follow us on LinkedIn for updates and opportunities.
-icon Follow us on TwitterX for the latest updates
-icon Follow us on Instagram for the latest updates
-icon Follow us on Facebook for the latest updates
-icon Boost The Arcade Don't Forget to like share & subscribe
+## 🌐 Join our Community [Boost The Arcade](https://www.youtube.com/@BoostTheArcade) Don't Forget to like, share & subscribe
