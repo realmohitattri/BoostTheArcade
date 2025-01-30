@@ -1,3 +1,4 @@
+``` 
 gcloud services enable dataflow.googleapis.com
 
 export REGION=$(gcloud compute project-info describe \
@@ -78,3 +79,4 @@ echo ""
 echo "https://console.cloud.google.com/dataflow/jobs?project=$DEVSHELL_PROJECT_ID"
 
 echo ""
+```
