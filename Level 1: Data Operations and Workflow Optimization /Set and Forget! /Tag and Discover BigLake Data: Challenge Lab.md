@@ -1,3 +1,10 @@
+# First Paste this 
+```
+export REGION=
+```
+
+### Then Paste this Command
+```
 #!/bin/bash
 # Define color variables
 
@@ -66,3 +73,4 @@ gcloud data-catalog tags create --entry=${ENTRY_NAME} \
 echo "${BG_RED}${BOLD}Subscribe Boost The Arcade${RESET}"
 
 #-----------------------------------------------------end----------------------------------------------------------#
+```
