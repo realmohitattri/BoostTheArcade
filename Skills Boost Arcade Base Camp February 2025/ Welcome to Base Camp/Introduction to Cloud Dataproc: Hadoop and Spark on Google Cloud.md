@@ -1,46 +1,38 @@
-### Code 1 [CREATE DATAPROC CLUSTER]:
 ```
-# Prompt user for input
-echo "Enter the region:"
-read REGION
-echo "Enter the zone:"
-read ZONE
-echo "Enter the project ID:"
-read PROJECT_ID
+# Set text styles
+YELLOW=$(tput setaf 3)
+BOLD=$(tput bold)
+RESET=$(tput sgr0)
 
-# Create Dataproc cluster
-gcloud dataproc clusters create qlab \
-  --enable-component-gateway \
-  --region $REGION \
-  --zone $ZONE \
-  --master-machine-type e2-standard-4 \
-  --master-boot-disk-type pd-balanced \
-  --master-boot-disk-size 100 \
-  --num-workers 2 \
-  --worker-machine-type e2-standard-2 \
-  --worker-boot-disk-size 100 \
-  --image-version 2.2-debian12 \
-  --project $PROJECT_ID
+echo "Please set the below values correctly"
+read -p "${YELLOW}${BOLD}Enter the CLUSTER_NAME: ${RESET}" CLUSTER_NAME
 
-```
+# Export variables after collecting input
+export CLUSTER_NAME 
 
----
-### above code will take upto 4 minutes...
+gcloud auth list
 
-### Code 2 [SUBMIT SPARK JOB]
+export ZONE=$(gcloud compute project-info describe --format="value(commonInstanceMetadata.items[google-compute-default-zone])")
 
-```
-# Prompt user for input
-echo "Enter the region:"
-read REGION
+export REGION=$(gcloud compute project-info describe --format="value(commonInstanceMetadata.items[google-compute-default-region])")
 
-# Submit Spark job to the cluster
+
+PROJECT_NUMBER=$(gcloud projects describe $(gcloud config get-value project) --format="value(projectNumber)")
+
+gcloud projects add-iam-policy-binding $DEVSHELL_PROJECT_ID \
+    --member="serviceAccount:$PROJECT_NUMBER-compute@developer.gserviceaccount.com" \
+    --role="roles/storage.admin"
+
+gcloud dataproc clusters create $CLUSTER_NAME --project $DEVSHELL_PROJECT_ID --region $REGION --zone $ZONE --master-machine-type n1-standard-2 --worker-machine-type n1-standard-2 --worker-boot-disk-size 100GB --worker-boot-disk-type pd-standard --num-workers 2 --no-address
+
 gcloud dataproc jobs submit spark \
-  --region $REGION \
-  --cluster qlab \
-  --class org.apache.spark.examples.SparkPi \
-  --jars file:///usr/lib/spark/examples/jars/spark-examples.jar \
-  -- 1000
+    --project $DEVSHELL_PROJECT_ID \
+    --region $REGION \
+    --cluster $CLUSTER_NAME \
+    --class org.apache.spark.examples.SparkPi \
+    --jars file:///usr/lib/spark/examples/jars/spark-examples.jar \
+    -- 1000
 
 
+echo "Click this link to open" "${YELLOW}${BOLD}https://console.cloud.google.com/dataproc/jobs?project=$DEVSHELL_PROJECT_ID${RESET}"
 ```
