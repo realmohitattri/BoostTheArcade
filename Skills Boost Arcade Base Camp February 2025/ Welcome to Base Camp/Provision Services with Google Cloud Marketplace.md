@@ -1,4 +1,4 @@
-In this Lab Open Google Cloud [Console]()
+In this Lab Open Google Cloud [Console](https://console.cloud.google.com/)
 # Task 1. Getting started with Marketplace
 Then Search `Bitnami package for NGINX Open Source`
 Follow Video Instructions
