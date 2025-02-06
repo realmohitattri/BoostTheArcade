@@ -9,9 +9,9 @@ Then Open Logging from [here]()
 resource.type="bigquery_resource"
 protoPayload.methodName="jobservice.jobcompleted"
 ```
-### Then Run this command
-
 Name the Sink :`JobComplete`
+
+### Then Run this command
 ```
 #!/bin/bash
 
