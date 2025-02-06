@@ -4,12 +4,14 @@
 bq mk bq_logs
 bq query --use_legacy_sql=false "SELECT current_date()"
 ```
+Then Open Logging from [here]() 
 ```
 resource.type="bigquery_resource"
 protoPayload.methodName="jobservice.jobcompleted"
 ```
 ### Then Run this command
 
+Name the Sink :`JobComplete`
 ```
 #!/bin/bash
 
