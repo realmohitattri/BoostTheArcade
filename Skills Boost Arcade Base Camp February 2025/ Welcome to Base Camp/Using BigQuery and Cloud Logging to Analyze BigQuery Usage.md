@@ -4,7 +4,7 @@
 bq mk bq_logs
 bq query --use_legacy_sql=false "SELECT current_date()"
 ```
-Then Open Logging from [here]() 
+Then Open Logging from [here](https://console.cloud.google.com/logs) 
 ```
 resource.type="bigquery_resource"
 protoPayload.methodName="jobservice.jobcompleted"
