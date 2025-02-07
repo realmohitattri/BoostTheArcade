@@ -1,6 +1,6 @@
 Open Drive from -> [here](https://drive.google.com/)
 
-### Then upload any of your file into Google Drive
+### First upload any of your file into Google Drive
 
 ### Then Create a folder name of `Important Data`
 
