@@ -235,3 +235,12 @@ echo "${BG_RED}${BOLD}Subscribe to BOOST THE ARCADE${RESET}"
 
 #-----------------------------------------------------end----------------------------------------------------------#
 ```
+### If second task is not completed then run this Command
+```
+gcloud run deploy rest-api \
+  --image gcr.io/$GOOGLE_CLOUD_PROJECT/rest-api:0.1 \
+  --platform managed \
+  --region us-east4 \
+  --allow-unauthenticated \
+  --max-instances=2
+```
