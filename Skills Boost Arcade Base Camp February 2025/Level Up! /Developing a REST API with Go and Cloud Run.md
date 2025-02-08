@@ -1,3 +1,9 @@
+# First run Region Command
+```
+export Region=
+```
+## Then Run this below command
+
 ```
 #!/bin/bash
 # Define color variables
