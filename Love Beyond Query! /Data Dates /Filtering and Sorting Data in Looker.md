@@ -1,10 +1,3 @@
-click `Flights`
+Open Looker from [here](https://lookerstudio.google.com/)
 
-`Flight Details` > `Measures` > click `Cancelled Count`
-
-`Flights` > `Dimensions` > `Depart Date`, click `Week`
-
-In `Depart Date` click on the Filter next to `Date`
-```
-
-```
+Watch Solution :
