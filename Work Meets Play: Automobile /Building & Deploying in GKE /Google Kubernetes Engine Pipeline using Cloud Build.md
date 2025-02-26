@@ -1,3 +1,4 @@
+```
 clear
 
 #!/bin/bash
@@ -353,3 +354,5 @@ remove_files() {
 }
 
 remove_files
+
+```
