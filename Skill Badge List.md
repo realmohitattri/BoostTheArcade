@@ -1,11 +1,11 @@
 # 30 Easy Skill Badges
 
 ---
-1. [Analyze Sentiment with Natural Language API] (https://www.cloudskillsboost.google/quests/323?catalog_rank=%7B%22rank%22%3A2%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&search_id=24956507)
+[1. Analyze Sentiment with Natural Language API] (https://www.cloudskillsboost.google/quests/323?catalog_rank=%7B%22rank%22%3A2%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&search_id=24956507)
 ---
-2. [Cloud Speech API: 3 Ways] (https://www.cloudskillsboost.google/quests/326?catalog_rank=%7B%22rank%22%3A2%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&search_id=24956488)
+[2. Cloud Speech API: 3 Ways] (https://www.cloudskillsboost.google/quests/326?catalog_rank=%7B%22rank%22%3A2%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&search_id=24956488)
 ---
-3. [Using the Google Cloud Speech API] (https://www.cloudskillsboost.google/quests/320)
+[3. Using the Google Cloud Speech API] (https://www.cloudskillsboost.google/quests/320)
 --- 
 4. Manage Bigtable on Google Cloud 
 (https://www.cloudskillsboost.google/quests/214)
